@@ -1,0 +1,51 @@
+import type { AnalyticsSummary } from "@/lib/types";
+
+export const mockAnalytics: AnalyticsSummary = {
+  totalRuns: 7412,
+  successRate: 98.4,
+  avgExecutionMs: 2140,
+  complaintsProcessed: 1286,
+  failures: 119,
+  resolvedComplaints: 1104,
+  runsOverTime: [
+    { label: "14 Sep", value: 186 },
+    { label: "15 Sep", value: 214 },
+    { label: "16 Sep", value: 242 },
+    { label: "17 Sep", value: 198 },
+    { label: "18 Sep", value: 276 },
+    { label: "19 Sep", value: 231 },
+    { label: "20 Sep", value: 248 },
+  ],
+  successVsFailure: [
+    { label: "14 Sep", success: 182, failed: 4 },
+    { label: "15 Sep", success: 209, failed: 5 },
+    { label: "16 Sep", success: 238, failed: 4 },
+    { label: "17 Sep", success: 190, failed: 8 },
+    { label: "18 Sep", success: 271, failed: 5 },
+    { label: "19 Sep", success: 224, failed: 7 },
+    { label: "20 Sep", success: 245, failed: 3 },
+  ],
+  runsByWorkflow: [
+    { label: "Connector Health Watch", value: 288 },
+    { label: "Complaint Resolution", value: 248 },
+    { label: "Customer Feedback", value: 96 },
+    { label: "Order Escalation", value: 41 },
+    { label: "Refund Verification", value: 28 },
+    { label: "Weekly Ops Digest", value: 1 },
+  ],
+  connectorFailures: [
+    { label: "Notion", value: 47 },
+    { label: "Webhook / API", value: 26 },
+    { label: "ClickUp", value: 18 },
+    { label: "GitHub", value: 14 },
+    { label: "Discord", value: 9 },
+    { label: "Google Sheets", value: 5 },
+  ],
+  complaintCategories: [
+    { label: "Delivery Issue", value: 486 },
+    { label: "Damaged Product", value: 291 },
+    { label: "Wrong Item", value: 214 },
+    { label: "Refund Delay", value: 168 },
+    { label: "Billing Error", value: 127 },
+  ],
+};
